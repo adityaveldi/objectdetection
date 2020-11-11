@@ -24,7 +24,7 @@ google = oauth.register(
 )
 
 # Session config
-app.secret_key = "aditya"
+app.secret_key = "asadfnaksdjhf"
 app.config['SESSION_COOKIE_NAME'] = 'google-login-session'
 app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)
 

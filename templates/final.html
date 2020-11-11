@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+    <div class="container-fluid text-center" style="background:black;height:70px;">
+    <div class="well text-center text-inline sticky-top" style="background:black">
+        <h1 style="color:steelblue;height:55px">REAL WORLD<small style="color:grey">OBJECT DETECTION</small></h1>
+    </div>
+</div>
+<h1>Thank you</h1>
+    <p style="color:red">If you want to detect more objects click here</p>
+    <form action="{{url_for('select')}}">
+        <input type="button" class="btn btn-primary" onClick="history.go(0)" VALUE="stop">
+ <button type="submit" class="btn shadow-lg" style="background:steelblue;color:white">DETECT</button>
+    </form>
+</center>
+</body>
+</html>

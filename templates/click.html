@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<center>
+<body>
+<div class="container-fluid text-center" style="background:black;height:70px;">
+    <div class="well text-center text-inline sticky-top" style="background:black">
+        <h1 style="color:steelblue;height:55px">REAL WORLD<small style="color:grey">OBJECT DETECTION</small></h1>
+    </div>
+</div>
+<h3 style="color:steelblue">DETECTING THE OBJECTS </h3>
+<br>
+    <img src="{{url_for('video_feed')}}" style="border: 2px solid red;margin-top:-5px;width:500px;height:500px"/>
+    <form action="{{url_for('select')}}">
+        <div align="right" style="margin-right:25px">
+            <button type="submit" class="btn shadow-lg" style="background:steelblue;color:white">EXIT</button>
+        </div>
+    </form>
+<div class="card-footer">
+     <p class="text-center">&copy;copyrights reserved 2020</p>
+    </div>
+</body>
+</center>
+</html>

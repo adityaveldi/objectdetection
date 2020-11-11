@@ -1,0 +1,56 @@
+<!doctype html>
+
+<!--style="background-image:url('{{url_for('static', filename='background.jpg')}}')"-->
+<html> <!--lang="en" xmlns="http://www.w3.org/1999/html"-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="floating-labels.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container-fluid" >
+
+    <div class="text-center text-inline" style="background:black">
+          <h1 style="color:steelblue;height:55px">REAL WORLD<small style="color:grey">OBJECT DETECTION</small></h1>
+    </div>
+    <!--div class="shadow p-5 bg-white rounded"-->
+        <div class="row">
+            <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="card md-4 shadow">
+                        <div class="card-header bg-white">
+                            <h3 class="text-center" style="color:black">
+                                Login
+                            </h3>
+                        </div>
+                        <img class="card-img-top" src="{{url_for('static', filename='login.jpg')}}"   height="150px" style="width:100%" vocab="Login">
+                        <div class="card-body">
+
+
+                             <form action="{{url_for('login')}}" >
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-light btn-block text-left" style="border-radius:30px;background:red;color:white">login with Google<img src="{{url_for('static', filename='google.jpg')}}" height="100%" width="50px" class="rounded float-right"></button>
+                                    </div>
+                             </form>
+                            <div class="card-footer">
+                                <p class="text-center">&copy;copyrights reserved 2020</p></div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container-fluid">
+            <button type="button"  class="btn btn-primary shadow"data-toggle="collapse" data-target="#demo">What we do</button>
+            <div id="demo" class="collapse text-left" style="color:steelblue">
+                We detect the objects from the live feed webcam
+            </div>
+        </div>
+    <!--/div-->
+</div>
+</body>
+</html>
